@@ -35,7 +35,7 @@ Table of Contents
 
 module.exports = {
   /* 01.General */
-  "general.copyright": "Gogo React © 2018 All Rights Reserved.",
+  "general.copyright": "Axios Team © 2019 All Rights Reserved.",
 
   /* 02.User Login, Logout, Register */
   "user.login-title": "Login",
