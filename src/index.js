@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+const rootEL = document.getElementById("root");
 /*
 color options : 
 	 'light.purple'		'dark.purple'
@@ -19,7 +20,7 @@ let render = () => {
 
     ReactDOM.render(
       <MainApp />,
-      document.getElementById("root")
+      rootEL
     );
   });
 

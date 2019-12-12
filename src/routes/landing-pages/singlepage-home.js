@@ -8,7 +8,8 @@ import Features from "Components/LandingPage/SectionFeatures";
 import Reviews from "Components/LandingPage/SectionReviews";
 import Footer from "Components/LandingPage/SectionFooter";
 import SectionPricingTable from "Components/LandingPage/SectionPricingTable";
-import Blog from "Components/LandingPage/SectionBlog";
+import Connect from "Components/LandingPage/SectionConnect";
+
 import { injectIntl } from 'react-intl';
 
 import Headroom from 'react-headroom';
@@ -74,11 +75,11 @@ class SinglepageHome extends Component {
 
               </div>
 
-              <div className="section"  ref={(x) => { this.features = x; }}>
+              {/* <div className="section"  ref={(x) => { this.features = x; }}>
                 <Container>
                   <Features />
                 </Container>
-              </div>
+              </div> */}
 
               <div className="section background"  ref={(x) => { this.reviews = x; }}>
                 <Container>
@@ -94,7 +95,7 @@ class SinglepageHome extends Component {
 
               <div className="section background background-no-bottom mb-0" ref={(x) => { this.blog = x; }}>
                 <Container>
-                  <Blog />
+                  <Connect />
                 </Container>
               </div>
 
