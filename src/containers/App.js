@@ -71,13 +71,13 @@ class App extends Component {
   						<NotificationContainer />
 						<Switch>
 							<InitialPath
-							path={`${match.url}app`}
+							path={`/homepage`}
 							authUser={user}
-							component={MainRoute}
+							component={SinglepageHome}
 						/>
-        					<Route path={`/multipage-home`} component={MultipageHome} />
-        					<Route path={`/singlepage-home`} component={SinglepageHome} />
-        					<Route path={`/about`} component={About} />
+        					<Route path={`/`} component={SinglepageHome} />
+        					{/* <Route path={`/multipage-home`} component={MultipageHome} /> */}
+        					{/* <Route path={`/about`} component={About} />
         					<Route path={`/auth-login`} component={AuthLogin} />
         					<Route path={`/auth-register`} component={AuthRegister} />
         					<Route path={`/blog`} component={Blog} />
@@ -95,7 +95,7 @@ class App extends Component {
 
 							<Route path={`/login`} component={login} />
 							<Route path={`/register`} component={register} />
-							<Route path={`/forgot-password`} component={forgotPassword} />
+							<Route path={`/forgot-password`} component={forgotPassword} /> */}
 							<Route path={`/error`} component={error} />
 							<Redirect to="/error" />
 						</Switch>

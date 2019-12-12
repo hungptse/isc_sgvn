@@ -9,11 +9,11 @@ import ecommerceDash from './ecommerce';
 const Dashboards = ({ match }) => (
     <div className="dashboard-wrapper">
         <Switch>
-            <Redirect exact from={`${match.url}/`} to={`${match.url}/default`} />
-            <Route path={`${match.url}/default`} component={defaultDash} />
-            <Route path={`${match.url}/content`} component={contentDash} />
-            <Route path={`${match.url}/ecommerce`} component={ecommerceDash} />
-            <Route path={`${match.url}/analytics`} component={analyticsDash} />
+            <Redirect exact from={`${match.url}/`} to={`${match.url}/homepage`} />
+            <Route path={`${match.url}/`} component={defaultDash} />
+            {/* <Route path={`${match.url}/content`} component={contentDash} /> */}
+            {/* <Route path={`${match.url}/ecommerce`} component={ecommerceDash} /> */}
+            {/* <Route path={`${match.url}/analytics`} component={analyticsDash} /> */}
             <Redirect to="/error" />
 
         </Switch>

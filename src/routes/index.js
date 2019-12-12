@@ -22,7 +22,7 @@ class MainApp extends Component {
 					<div className="container-fluid">
 						<Switch>
 							<Route path={`${match.url}/applications`} component={applications} />
-							<Route path={`${match.url}/dashboards`} component={dashboards} />
+							<Route path={`${match.url}/`} component={dashboards} />
 							<Route path={`${match.url}/layouts`} component={layouts} />
 							<Route path={`${match.url}/ui`} component={ui} />
 							<Redirect to="/error" />
