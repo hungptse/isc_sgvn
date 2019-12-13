@@ -57,19 +57,19 @@ export class MenuMultipage extends Component {
               <IntlMessages id="lp.menu.blog" />
             </NavLink>
           </NavItem>
-          <NavItem className={window.location.pathname === '/auth-login' ? 'active' : ''}>
+          {/* <NavItem className={window.location.pathname === '/auth-login' ? 'active' : ''}>
             <NavLink to="/auth-login">
               <IntlMessages id="lp.menu.signin" />
             </NavLink>
-          </NavItem>
-          <NavItem>
+          </NavItem> */}
+          {/* <NavItem>
             <NavLink
               className="btn btn-outline-semi-light btn-sm pr-4 pl-4"
               to="/auth-register"
             >
               <IntlMessages id="lp.menu.signup" />
             </NavLink>
-          </NavItem>
+          </NavItem> */}
         </Nav>
         <NavLink
           className="mobile-menu-button"
@@ -152,16 +152,16 @@ export class MenuMultipageMobile extends React.Component {
           <NavItem>
             <div className="separator" />
           </NavItem>
-          <NavItem className={window.location.pathname === '/auth-login' ? 'active' : ''}>
+          {/* <NavItem className={window.location.pathname === '/auth-login' ? 'active' : ''}>
             <NavLink to="/auth-login">
               <IntlMessages id="lp.menu.signin" />
             </NavLink>
-          </NavItem>
-          <NavItem className={window.location.pathname === '/auth-register' ? 'active' : ''}>
+          </NavItem> */}
+          {/* <NavItem className={window.location.pathname === '/auth-register' ? 'active' : ''}>
             <NavLink to="/auth-register">
               <IntlMessages id="lp.menu.signup" />
             </NavLink>
-          </NavItem>
+          </NavItem> */}
 
         </Nav>
 
@@ -218,7 +218,7 @@ export class MenuSinglepage extends Component {
               <IntlMessages id="lp.menu.pricing" />
             </NavLink>
           </NavItem>
-          <NavItem>
+          {/* <NavItem>
             <NavLink
               to="#"
               onClick={event => {
@@ -227,12 +227,12 @@ export class MenuSinglepage extends Component {
             >
               <IntlMessages id="lp.menu.blog" />
             </NavLink>
-          </NavItem>
-          <NavItem>
+          </NavItem> */}
+          {/* <NavItem>
             <NavLink to="auth-register">
               <IntlMessages id="lp.menu.signin" />
             </NavLink>
-          </NavItem>
+          </NavItem> */}
           <NavItem>
             <NavLink
               className="btn btn-outline-semi-light btn-sm pr-4 pl-4"
@@ -322,11 +322,11 @@ export class MenuSinglepageMobile extends React.Component {
               <IntlMessages id="lp.menu.signin" />
             </NavLink>
           </NavItem>
-          <NavItem>
+          {/* <NavItem>
             <NavLink to="/auth-register">
               <IntlMessages id="lp.menu.signup" />
             </NavLink>
-          </NavItem>
+          </NavItem> */}
         </Nav>
       </div>
     );

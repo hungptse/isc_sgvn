@@ -71,6 +71,7 @@ class ColorSwitcher extends Component {
 		const selectedColor = this.state.selectedColor
 		return (
 			<div className={`theme-colors ${this.state.isOpen ? 'shown' : ''}`}>
+				<a href="#" className="theme-button" onClick={this.toggle} > <i className="simple-icon-magic-wand"></i> </a>
 				<div className="p-4">
 					<p className="text-muted mb-2">Light Theme</p>
 					<div className="d-flex flex-row justify-content-between mb-4">
@@ -89,7 +90,6 @@ class ColorSwitcher extends Component {
 						<a href="#" className={`theme-color theme-color-red ${selectedColor==='dark.red'?'active':''}`} onClick={e => this.changeThemeColor(e, 'dark.red')}></a>
 					</div>
 				</div>
-				<a href="#" className="theme-button" onClick={this.toggle} > <i className="simple-icon-magic-wand"></i> </a>
 			</div>
 		);
 	}

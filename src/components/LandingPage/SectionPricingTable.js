@@ -26,7 +26,7 @@ export default class SectionPricingTable extends React.Component {
                                 <div className="price-top-part">
                                     <i className="iconsmind-Male large-icon"></i>
                                     <h5 className="mb-0 font-weight-semibold color-theme-1 mb-4"> <IntlMessages id="lp.pricetable.title-1" /></h5>
-                                    <p className="text-large mb-2 text-default">$11</p>
+                                    <p className="text-large mb-2 text-default">$699</p>
                                     <p className="text-muted text-small"> <IntlMessages id="lp.pricetable.detail-1" /></p>
                                 </div>
                                 <div className="pl-3 pr-3 pt-3 pb-0 d-flex price-feature-list flex-column flex-grow-1">
@@ -60,7 +60,7 @@ export default class SectionPricingTable extends React.Component {
                                 <div className="price-top-part">
                                     <i className="iconsmind-MaleFemale large-icon"></i>
                                     <h5 className="mb-0 font-weight-semibold color-theme-1 mb-4"><IntlMessages id="lp.pricetable.title-2" /></h5>
-                                    <p className="text-large mb-2 text-default">$17</p>
+                                    <p className="text-large mb-2 text-default">$500</p>
                                     <p className="text-muted text-small"><IntlMessages id="lp.pricetable.detail-2" /></p>
                                 </div>
                                 <div className="pl-3 pr-3 pt-3 pb-0 d-flex price-feature-list flex-column flex-grow-1">
@@ -100,7 +100,7 @@ export default class SectionPricingTable extends React.Component {
                                 <div className="price-top-part">
                                     <i className="iconsmind-MaleFemale large-icon"></i>
                                     <h5 className="mb-0 font-weight-semibold color-theme-1 mb-4"><IntlMessages id="lp.pricetable.title-3" /></h5>
-                                    <p className="text-large mb-2 text-default">$19</p>
+                                    <p className="text-large mb-2 text-default">$599</p>
                                     <p className="text-muted text-small"><IntlMessages id="lp.pricetable.detail-3" /></p>
                                 </div>
                                 <div className="pl-3 pr-3 pt-3 pb-0 d-flex price-feature-list flex-column flex-grow-1">

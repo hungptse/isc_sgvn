@@ -14,7 +14,9 @@ import { injectIntl } from 'react-intl';
 
 import Headroom from 'react-headroom';
 import scrollToComponent from 'react-scroll-to-component';
+import { Widget, addResponseMessage, addLinkSnippet, addUserMessage } from 'react-chat-widget';
 
+import 'react-chat-widget/lib/styles.css';
 import { connect } from "react-redux";
 import { landingPageMobileMenuToggle, landingPageMobileMenuClose } from "Redux/actions";
 const mapStateToProps = ({ landingPage }) => {
@@ -29,6 +31,15 @@ class SinglepageHome extends Component {
     this.onMenuClick = this.onMenuClick.bind(this);
   }
 
+  componentDidMount(){
+    addResponseMessage("Welcome to SGVN Path!");
+    addUserMessage("I want to know how much to study in Singapore?");
+    addResponseMessage("The budget will cost USD$2,000 to USD$3,000");
+    addUserMessage("I like to take a look at the school in Singapore?");
+    addResponseMessage("Please take a look at the link: https://www.youtube.com/watch?v=x8tf-VrbTDs");
+    addUserMessage("How does the living environment in Singapore?");
+    addResponseMessage("Please take a look at the link: https://www.youtube.com/watch?v=6y1D7tuH1i4");
+  }
   onMobileMenuToggle() {
     this.props.landingPageMobileMenuToggle()
   }
@@ -46,13 +57,17 @@ class SinglepageHome extends Component {
         this.props.landingPageMobileMenuClose();
       });
     } else {
-      scrollToComponent(this[ref], { align: 'top'});
+      scrollToComponent(this[ref], { align: 'top' });
     }
   }
+
 
   render() {
     return (
       <Fragment>
+        <Widget title="SGVN PATH"
+          // handleNewUserMessage={this.chatbotAI}
+          subtitle="Virual Consultant" />
         <div className={this.props.isMobileMenuOpen ? "landing-page show-mobile-menu" : "landing-page"}>
           <MenuSinglepageMobile onClick={this.onMenuClick} onUnmountingMenu={() => this.onUnmountingMobileMenu()}></MenuSinglepageMobile>
           <div className="main-container">
@@ -81,7 +96,7 @@ class SinglepageHome extends Component {
                 </Container>
               </div> */}
 
-              <div className="section background"  ref={(x) => { this.reviews = x; }}>
+              <div className="section background" ref={(x) => { this.reviews = x; }}>
                 <Container>
                   <Reviews />
                 </Container>

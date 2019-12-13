@@ -16,7 +16,7 @@ export default class SectionFeatureCarousel extends React.Component {
                             0: 1,
                             768: 2,
                             1200: 3,
-                            1440: 4
+                            // 1440: 4
                         }}
                         controls={false}
                         loop={false}>
@@ -62,7 +62,7 @@ export default class SectionFeatureCarousel extends React.Component {
                                 </CardBody>
                             </Card>
                         </div>
-
+{/* 
                         <div className="pr-3 pl-3">
                             <Card>
                                 <CardBody className="text-center">
@@ -90,7 +90,7 @@ export default class SectionFeatureCarousel extends React.Component {
                                     <NavLink className="btn btn-link font-weight-semibold" to="/features"><IntlMessages id="lp.featurecarousel.view"/></NavLink>
                                 </CardBody>
                             </Card>
-                        </div>
+                        </div> */}
                     </ReactSiemaCarousel>
                 </Colxx>
             </Row>

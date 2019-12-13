@@ -45,13 +45,13 @@ export default class SectionHeroHome extends React.Component {
               <IntlMessages id="lp.hero.detail-line-1" />
               <br />
               <br />
-              <IntlMessages id="lp.hero.detail-line-2" />
+              {/* <IntlMessages id="lp.hero.detail-line-2" /> */}
               <br />
               <br />
-              <IntlMessages id="lp.hero.detail-line-3" />
+              {/* <IntlMessages id="lp.hero.detail-line-3" /> */}
             </p>
             <NavLink
-              to="/auth-register"
+              to="/quiz"
               className="btn btn-outline-semi-light btn-xl"
             >
               <IntlMessages id="lp.hero.register" />
@@ -66,7 +66,7 @@ export default class SectionHeroHome extends React.Component {
           lg="7"
           className="d-none d-md-block"
         >
-          <img alt="hero" src="/assets/img/landing-page/home-hero.png" />
+          <img style={{width : "100%"}} alt="school" src="/assets/img/landing-page/school.jpeg" />
         </Colxx>
       </Row>
     );

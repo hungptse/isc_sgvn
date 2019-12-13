@@ -594,9 +594,9 @@ class Sidebar extends Component {
                 <NavItem>
                   <a href="/auth-login" target="_blank"><i className="simple-icon-user-following" />{" "}<IntlMessages id="menu.auth-login" /></a>
                 </NavItem>
-                <NavItem>
-                  <a href="/auth-register" target="_blank"><i className="simple-icon-user-follow" />{" "}<IntlMessages id="menu.auth-register" /></a>
-                </NavItem>
+                  {/* <NavItem>
+                    <a href="/auth-register" target="_blank"><i className="simple-icon-user-follow" />{" "}<IntlMessages id="menu.auth-register" /></a>
+                  </NavItem> */}
                 <NavItem>
                   <a href="/blog" target="_blank"><i className="simple-icon-bubbles" />{" "}<IntlMessages id="menu.blog" /></a>
                 </NavItem>

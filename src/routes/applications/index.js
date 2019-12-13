@@ -9,15 +9,13 @@ import chat from "./chat";
 const Applications = ({ match }) => (
   <div className="dashboard-wrapper">
     <Switch>
-      <Redirect exact from={`${match.url}/`} to={`${match.url}/todo`} />
-      <Route path={`${match.url}/todo`} component={todo} />
+      <Redirect exact from={`/`} to={`/survey`} />
       <Route
-        path={`${match.url}/survey/:surveyid`}
+        path={`/survey/:surveyid`}
         component={surveyDetail}
         isExact
       />
-      <Route path={`${match.url}/survey`} component={surveyList} isExact />
-      <Route path={`${match.url}/chat`} component={chat} />
+      <Route path={`/survey`} component={surveyList} isExact />
       <Redirect to="/error" />
     </Switch>
   </div>

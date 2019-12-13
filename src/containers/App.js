@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from 'react';
-import { Redirect, Route, Switch} from 'react-router-dom';
-import { IntlProvider} from 'react-intl';
+import { Redirect, Route, Switch } from 'react-router-dom';
+import { IntlProvider } from 'react-intl';
 
 import ColorSwitcher from 'Components/ColorSwitcher'
-import {  NotificationContainer} from "Components/ReactNotifications";
+import { NotificationContainer } from "Components/ReactNotifications";
 
 import { defaultStartPath } from 'Constants/defaultValues'
 
@@ -37,6 +37,7 @@ import DocsDetails from "Routes/landing-pages/docs-details";
 
 import 'Assets/css/vendor/bootstrap.min.css'
 import 'react-perfect-scrollbar/dist/css/styles.css';
+import Applications from '../routes/applications';
 
 
 const InitialPath = ({ component: Component, ...rest, authUser }) =>
@@ -57,7 +58,7 @@ class App extends Component {
 	render() {
 		const { location, match, user, locale } = this.props;
 		const currentAppLocale = AppLocale[locale];
-		if (location.pathname === '/'  || location.pathname==='/app'|| location.pathname==='/app/') {
+		if (location.pathname === '/' || location.pathname === '/app' || location.pathname === '/app/') {
 			return (<Redirect to={defaultStartPath} />);
 		}
 		return (
@@ -68,17 +69,19 @@ class App extends Component {
 				>
 
 					<Fragment>
-  						<NotificationContainer />
+						<NotificationContainer />
 						<Switch>
 							<InitialPath
-							path={`/homepage`}
-							authUser={user}
-							component={SinglepageHome}
-						/>
-        					<Route path={`/`} component={SinglepageHome} />
-        					{/* <Route path={`/multipage-home`} component={MultipageHome} /> */}
-        					{/* <Route path={`/about`} component={About} />
-        					<Route path={`/auth-login`} component={AuthLogin} />
+								path={`/`}
+								authUser={user}
+								component={SinglepageHome}
+							/>
+							<Route path={`/homepage`} component={SinglepageHome} />
+							<Route path={`/survey`} component={Applications} />
+        					<Route path={`/login`} component={AuthLogin} />
+
+							{/* <Route path={`/multipage-home`} component={MultipageHome} /> */}
+							{/* <Route path={`/about`} component={About} />
         					<Route path={`/auth-register`} component={AuthRegister} />
         					<Route path={`/blog`} component={Blog} />
         					<Route path={`/blog-detail`} component={BlogDetail} />
@@ -99,7 +102,7 @@ class App extends Component {
 							<Route path={`/error`} component={error} />
 							<Redirect to="/error" />
 						</Switch>
-						<ColorSwitcher />
+						{/* <ColorSwitcher /> */}
 					</Fragment>
 				</IntlProvider>
 			</Fragment>
@@ -113,5 +116,5 @@ const mapStateToProps = ({ authUser, settings }) => {
 	return { user, locale };
 };
 
-export default connect(mapStateToProps, { })(App);
+export default connect(mapStateToProps, {})(App);
 

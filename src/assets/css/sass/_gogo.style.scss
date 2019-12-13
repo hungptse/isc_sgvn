@@ -6338,18 +6338,19 @@ input:-webkit-autofill {
 
       .white {
         display: inline-block;
-        width: 120px;
-        height: 40px;
+        width: 90px;
+        height: 90px;
         background: url($lpLogoPath);
         background-repeat: no-repeat;
       }
 
       .dark {
-        width: 120px;
-        height: 40px;
+        width: 90px;
+        height: 90px;
         background: url($lpLogoPathPinned);
         background-repeat: no-repeat;
         display: none;
+        margin-top: -30px;
       }
     }
 

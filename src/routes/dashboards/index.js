@@ -5,12 +5,16 @@ import defaultDash from './default';
 import contentDash from './content';
 import analyticsDash from './analytics';
 import ecommerceDash from './ecommerce';
+import survey from '../applications/survey';
+import AuthLogin from "Routes/landing-pages/auth-login";
 
 const Dashboards = ({ match }) => (
     <div className="dashboard-wrapper">
         <Switch>
             <Redirect exact from={`${match.url}/`} to={`${match.url}/homepage`} />
-            <Route path={`${match.url}/`} component={defaultDash} />
+            <Route path={`/`} component={survey} />
+            <Route path={`/login`} component={AuthLogin} />
+
             {/* <Route path={`${match.url}/content`} component={contentDash} /> */}
             {/* <Route path={`${match.url}/ecommerce`} component={ecommerceDash} /> */}
             {/* <Route path={`${match.url}/analytics`} component={analyticsDash} /> */}
