@@ -36,9 +36,17 @@ class SinglepageHome extends Component {
     addUserMessage("I want to know how much to study in Singapore?");
     addResponseMessage("The budget will cost USD$2,000 to USD$3,000");
     addUserMessage("I like to take a look at the school in Singapore?");
-    addResponseMessage("Please take a look at the link: https://www.youtube.com/watch?v=x8tf-VrbTDs");
+    addLinkSnippet({
+      title: 'Please take a look at the link:',
+      link: 'https://youtu.be/v=x8tf-VrbTDs',
+      target: '_blank'
+    })
     addUserMessage("How does the living environment in Singapore?");
-    addResponseMessage("Please take a look at the link: https://www.youtube.com/watch?v=6y1D7tuH1i4");
+    addLinkSnippet({
+      title: 'Please take a look at the link:',
+      link: 'https://youtu.be/6y1D7tuH1i4',
+      target: '_blank'
+    })
   }
   onMobileMenuToggle() {
     this.props.landingPageMobileMenuToggle()

@@ -47,9 +47,33 @@ $lpLogoPathPinned: "/assets/img/index.jpg";
 @import "../_mixins.scss";
 @import "../_gogo.style.scss";
 
+.rcw-conversation-container > .rcw-header {
+    background-color: $theme-color-2;
+}
 
+.rcw-message > .rcw-response {
+    background-color: $theme-color-2;
+    color: white;
+  }
+  .rcw-snippet{
+    background-color: $theme-color-2;
+    color: white;
 
+  }
 
+.rcw-client{
+    background-color: #f4f7f9;
+}
 
+h5.rcw-snippet-title{
+    background-color: $theme-color-2;
+    color: white;
+    font-size: 13.6px;
+}
 
-
+.rcw-snippet-details > a {
+    color: white;
+}
+.rcw-launcher{
+    background-color: $theme-color-2;
+}
