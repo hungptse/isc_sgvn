@@ -9,7 +9,7 @@ import chat from "./chat";
 const Applications = ({ match }) => (
   <div className="dashboard-wrapper">
     <Switch>
-      <Redirect exact from={`/`} to={`/survey`} />
+      {/* <Redirect exact from={`/`} to={`/survey`} /> */}
       <Route
         path={`/survey/:surveyid`}
         component={surveyDetail}

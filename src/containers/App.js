@@ -74,10 +74,10 @@ class App extends Component {
 							<InitialPath
 								path={`/`}
 								authUser={user}
-								component={SinglepageHome}
+								component={MainRoute}
 							/>
-							<Route path={`/homepage`} component={SinglepageHome} />
-							<Route path={`/survey`} component={Applications} />
+							<Route path={`/homepage`} component={Applications} />
+							<Route path={`/quiz`} component={Applications} />
         					<Route path={`/login`} component={AuthLogin} />
 
 							{/* <Route path={`/multipage-home`} component={MultipageHome} /> */}
