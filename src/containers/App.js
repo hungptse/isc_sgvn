@@ -38,6 +38,7 @@ import DocsDetails from "Routes/landing-pages/docs-details";
 import 'Assets/css/vendor/bootstrap.min.css'
 import 'react-perfect-scrollbar/dist/css/styles.css';
 import Applications from '../routes/applications';
+import survey from '../routes/applications/survey';
 
 
 const InitialPath = ({ component: Component, ...rest, authUser }) =>
@@ -58,9 +59,9 @@ class App extends Component {
 	render() {
 		const { location, match, user, locale } = this.props;
 		const currentAppLocale = AppLocale[locale];
-		if (location.pathname === '/' || location.pathname === '/app' || location.pathname === '/app/') {
-			return (<Redirect to={defaultStartPath} />);
-		}
+		// if (location.pathname === '/' || location.pathname === '/app' || location.pathname === '/app/') {
+		// 	return (<Redirect to={defaultStartPath} />);
+		// }
 		return (
 			<Fragment>
 				<IntlProvider
@@ -71,13 +72,13 @@ class App extends Component {
 					<Fragment>
 						<NotificationContainer />
 						<Switch>
-							<InitialPath
+							{/* <InitialPath
 								path={`/`}
 								authUser={user}
-								component={MainRoute}
-							/>
-							<Route path={`/homepage`} component={Applications} />
-							<Route path={`/quiz`} component={Applications} />
+								component={SinglepageHome}
+							/> */}
+							<Route path={`/homepage`} component={SinglepageHome} />
+							<Route path={`/quiz`} component={survey} />
         					<Route path={`/login`} component={AuthLogin} />
 
 							{/* <Route path={`/multipage-home`} component={MultipageHome} /> */}
